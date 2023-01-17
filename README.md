@@ -8,5 +8,6 @@ Quantification number of cells by area percentage  above a threshold apply
 ### 5- Enter in the macro the chanel and the threshold you need to quantify (line 46)
 ### 6- Apply the macro on a folder containing your .czi images (you could change to other format, change the line 31)
 ### 7- You will obtain a result folder  containing a result file with 3 columns (title, area percentage, area) in the same image folder 
-Area percentage is the area above the threshold, Area is the area of the image, area_percentage*area= area of the labelling above the threshold
+Area percentage is the area percentage above the threshold in the image, Area is the area of the image in micron (if calibrated), area_percentage*area= area of the labelling above the threshold in micron.
+
 ![Clipboard](https://user-images.githubusercontent.com/41480459/212902564-c3b8409e-91c2-4efd-ac91-04b61997e146.jpg)
