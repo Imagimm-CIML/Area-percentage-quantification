@@ -10,6 +10,9 @@ Quantification number of cells by area percentage  above a threshold apply
 ### 7- You will obtain a result folder in the same image folder containing a result file with 3 columns (title, area percentage, area) 
 Area percentage is the area percentage above the threshold in the image, Area is the area of the image in micron (if calibrated), area_percentage*area= area of the labelling above the threshold in micron.
 
+![Clipboard](https://user-images.githubusercontent.com/41480459/212920264-813d813d-510c-46ad-9826-1e9b113057ca.jpg)
+
+
 In this example, the red labelling above the threshold = 33 have an area percentage of 4.442 % (it means it is occupied 4.442 % percent of the image)
 
 ![Clipboard](https://user-images.githubusercontent.com/41480459/212902564-c3b8409e-91c2-4efd-ac91-04b61997e146.jpg)
