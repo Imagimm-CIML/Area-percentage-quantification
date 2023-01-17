@@ -27,7 +27,7 @@ run("Set Measurements...", "area area_fraction display redirect=None decimal=3")
 dir = getDirectory("ChooseDirectory");
 list= getFileList(dir); 
 
-// calculate the number of images (if folder results inside the image list)
+// calculate the number of images (because we create a folder results inside the image list)
 Nb_images = 0;
 // filter on format .czi
 for (i=0; i < list.length; i++) {
