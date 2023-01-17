@@ -4,13 +4,14 @@
 // Mathieu Fallet for Hugues Lelouard
 // 17/01/2023
 
-// Before to use it you need to detremine the thresold (on activate  vs control) for channel 4 et 6
+// Before to use it you need to set the thresold (on activate  vs control) for channels
+// in this macro we use  : 
 // chanel 6 thr= 40
 // chanel 4 thr = 100
 
-// IN : image multichannels, we will process channel 4 et 6
+// IN : image multichannels and Z stack
 // OUT : results file  with area pourcentage and title image  for channel 4 and 6
-// OUT : log file with image area to check it is correct
+// OUT : log file 
 
 // Reset
 run("Clear Results");
@@ -24,7 +25,7 @@ run("Set Measurements...", "area area_fraction display redirect=None decimal=3")
 dir = getDirectory("ChooseDirectory");
 list= getFileList(dir); 
 
-// calculate the number of images
+// calculate the number of images (if folder results inside the image list)
 Nb_images = 0;
 // filter on format .czi
 for (i=0; i < list.length; i++) {
@@ -49,14 +50,13 @@ area_pourcentage_chanel6 = Quantify_area_pourcentage(6,40);
 // calculate area percentage  for channel 4 with threshold =  100 
 area_pourcentage_chanel4 = Quantify_area_pourcentage(4,100);
 
-//
 //  write results Title, Area pourcentage for the two channels 6 and 4
 //File.append( "Title" + "," + "Area_pourcentage_channel_6"+ "," + "Area_pourcentage_channel_4", path_results);
 //for (m=0; m < Nb_images; m++) {
 //	File.append(list[m] + ","+ area_pourcentage_chanel6[m]+ ","+ area_pourcentage_chanel4[m] ,path_results);
 //}
 
-// save log file to check area is correct
+// save log file (due to print to check evrything is ok))
 selectWindow("Log");
 saveAs("Text", dir +"results/Log.txt");
 																											
