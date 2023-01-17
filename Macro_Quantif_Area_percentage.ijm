@@ -1,7 +1,9 @@
 // Measure area and area percentage above threshold
-// for multiple channels
-// and multiple images
-// Mathieu Fallet for Hugues Lelouard
+// For multiple channels image with z stack (a MIP projection is used)
+// And several images in a folder
+// Gaussian filter at 2 pixels 
+
+// Mathieu Fallet for Hugues Lelouard (CIML)
 // 17/01/2023
 
 // Before to use it you need to set the thresold (on activate  vs control) for channels
