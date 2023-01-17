@@ -1,5 +1,6 @@
-// Measure  are percentage 
-// in two chanels
+// Measure area and area percentage above threshold
+// for multiple channels
+// and multiple images
 // Mathieu Fallet for Hugues Lelouard
 // 17/01/2023
 
