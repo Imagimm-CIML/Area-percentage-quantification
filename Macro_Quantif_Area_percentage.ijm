@@ -6,7 +6,7 @@
 // And several images in a folder
 // Gaussian filter at 2 pixels 
 
-// Before to use it you need to set the thresold (on activate  vs control) for channels
+// Before to use it you need to set the threshold (on activate  vs control) for channels
 // in this macro we use  : 
 // chanel 6 thr= 40
 // chanel 4 thr = 100
