@@ -6,8 +6,8 @@ Quantification  cells density using area percentage above a threshold when cells
 ### 2- Z stack is projected in MIP 
 ### 3- A gaussian blur is used : set the diamater in pixel
 ### 4- You can use two methods to process your images : manual or auto thershold  ("triangle" or "moments")
-The threshold value of automatic threshold is not exported but printed in the log file.
-Exmample of result : "Triangle" method (value=34) :
+The threshold value of automatic threshold is not exported but printed in the log file.  
+Exmample of result : "Triangle" method (value=34) : area percentage= 4%
 ![Clipboard](https://user-images.githubusercontent.com/41480459/228169425-96cd1521-8432-4a5f-ba3f-92a011cec6d2.jpg)
 
 ### 6- Choose the folder containing your .czi images (or/and tif images)
