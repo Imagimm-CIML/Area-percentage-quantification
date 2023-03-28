@@ -6,6 +6,7 @@
 // Measure area and area percentage with auto threshold or manuel threshold for two channels
 
 // For multiple channels image with z stack (a MIP projection is used)
+// 16 bits or 8 bits (no conversion)
 // And several images in a folder 
 // Gaussian filter in pixels 
 
@@ -143,6 +144,8 @@ run("Clear Results");
 		// Threshold
 		print("Threshold="+ method);
         setAutoThreshold(method +" dark");
+        getThreshold(lower,upper);
+        print("Auto threshold="+lower);
 		//measure area and area fraction
 		run("Measure");
 		
