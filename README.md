@@ -10,7 +10,7 @@ The threshold value of automatic threshold is not exported but printed in the lo
 Example of result : "Triangle" method (value=34) : area percentage= 4%
 ![Clipboard](https://user-images.githubusercontent.com/41480459/228169425-96cd1521-8432-4a5f-ba3f-92a011cec6d2.jpg)
 
-### 6- Choose the folder containing your .czi images (or/and tif images)
+### 6- Choose the folder containing your .czi images (and tif(f) images)
 ### 7- You will obtain a result folder in the same image folder containing two results file in csv with 3 columns (title, area percentage, area) 
 Area percentage is the area percentage above the threshold in the image, Area is the area of the image in micron² (if calibrated), area_percentage*area= area of the labelling above the threshold in micron².
 
